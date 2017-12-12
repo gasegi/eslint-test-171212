@@ -1,0 +1,12 @@
+はじめに
+対象読者
+eslintとは
+astとは　http://efcl.info/2016/03/06/ast-first-step/
+今回作成するもの
+作成環境を作る
+　yoemanでコマンドが実行できずつまった
+　eslint-plugin-richlabで代用
+ESTreeについて
+ルールを書く
+テストを書く
+　このあたりでcamelcase、uppersnakecaseの判定にかなりつまった

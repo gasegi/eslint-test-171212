@@ -1,0 +1,29 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {}
+    },
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+    ],
+    "plugins": [
+        "playground334"
+    ],
+    // see http://eslint.org/docs/rules/
+    "rules": {
+        // "prefer-const": [
+        //     "error",
+        //     {
+        //         "destructuring": "any",
+        //         "ignoreReadBeforeAssign": false
+        //     }
+        // ],
+        "indent": "off",
+        "no-unused-vars": "off",
+        "playground334/alternative-camelcase": "error"
+    }
+}

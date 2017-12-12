@@ -1,0 +1,38 @@
+{
+  "name": "eslint-plugin-playground334",
+  "description": "An ESLint plugin.",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel-cli": "^6.0.12",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "~6.0.12",
+    "eslint": "^4.12.1",
+    "espower-babel": "^3.3.0",
+    "fixpack": "^2.2.0",
+    "mocha": "^2.3.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "fixpack": "fixpack",
+    "prepublish": "npm build && npm test && npm run build",
+    "test": "npm run build && mocha tests --recursive --compilers js:babel-core/register",
+    "watch": "npm run watch-build & npm run watch-test",
+    "watch-build": "babel -w src -d lib",
+    "watch-test": "mocha -w tests --recursive --compilers js:babel-core/register"
+  },
+  "false": {}
+}
